@@ -16,7 +16,8 @@ while True: #loop that allows us to play several times
 
     #deal one card from the deck to the player's hand
     deck.deal(player)
-
+    deck.deal(house)
+    
     #after seeing his card, the player makes a bet
     bet = int(input("how much do you want to bet?"))
     player.bet(bet)
