@@ -1,7 +1,10 @@
 from game import *
 # we start by creating our two players, the player and the house
 player = Player(Hand([]), 80, "John")
-house = Player(Hand([]), 9999999999, "House")
+
+# TODO make the house a different class instead of another player
+house = House(Hand([]))
+
 
 while True:  # loop that allows us to play several times
     # reset the deck
