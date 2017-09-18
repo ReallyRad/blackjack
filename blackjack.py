@@ -79,7 +79,13 @@ while True: #loop that allows us to play several times
     deck.deal(player)
 
     #after seeing his card, the player makes a bet
-    bet = int(input("how much do you want to bet?"))
+    while True:
+        try:
+            bet = int(input("how much do you want to bet?"))
+        except:
+            print("Please type in a number")
+        else:
+            break
     #TODO add exception handling in the case no number is entered
     player.bet(bet)
 
