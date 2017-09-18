@@ -1,5 +1,6 @@
 import random
 
+#TODO cleanup and put classes in a module called game
 class Card:
     def __init__(self, suit, value):
         #initializes the card
