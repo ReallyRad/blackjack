@@ -65,7 +65,7 @@ class Player:
         print("player has", self.chips, "chips")
 
 #we start by creating our two players, the player and the house
-player = Player(Hand([]), 80, "John")
+player = Player(Hand([]), 80, "Sean")
 house = Player(Hand([]), 9999999999, "House")
 
 while True: #loop that allows us to play several times
