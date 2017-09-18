@@ -7,7 +7,11 @@ house = Player(Hand([]), 9999999999, "House")
 =======
 player = Classes_blackjack.Player(Classes_blackjack.Hand([]), 80, "John")
 house = Classes_blackjack.Player(Classes_blackjack.Hand([]), 9999999999, "House")
+<<<<<<< HEAD
 >>>>>>> origin/separate-classes
+=======
+>>>>>>> origin/master
+>>>>>>> master
 
 while True: #loop that allows us to play several times
     #reset the deck
