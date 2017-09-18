@@ -63,3 +63,8 @@ class Player:
     def display_chips(self):
         #displays how many chips the player has
         print("player has", self.chips, "chips")
+        
+class House:
+    def __init__(self, hand):
+        #the house elemnts are in fact just the hand (rather than chips or name as a player)
+        self.hand = hand
