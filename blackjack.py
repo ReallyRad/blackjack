@@ -22,7 +22,7 @@ while True: #loop that allows us to play several times
             print("Please type in a number")
         else:
             break
-    #TODO add exception handling in the case no number is entered
+
     player.bet(bet)
 
 
