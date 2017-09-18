@@ -1,5 +1,7 @@
 from game import *
 #we start by creating our two players, the player and the house
+# TODO update the program so that multiple player can participate
+
 player = Player(Hand([]), 80, "John")
 house = Player(Hand([]), 9999999999, "House")
 
