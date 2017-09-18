@@ -5,7 +5,7 @@ from blackjack import Classes_blackjack
 player = Player(Hand([]), 80, "Sean")
 house = Player(Hand([]), 9999999999, "House")
 =======
-player = Classes_blackjack.Player(Classes_blackjack.Hand([]), 80, "John")
+player = Classes_blackjack.Player(Classes_blackjack.Hand([]), 80, "Sean")
 house = Classes_blackjack.Player(Classes_blackjack.Hand([]), 9999999999, "House")
 <<<<<<< HEAD
 >>>>>>> origin/separate-classes
