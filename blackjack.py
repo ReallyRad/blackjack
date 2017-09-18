@@ -22,10 +22,10 @@ while True:  # loop that allows us to play several times
 
     while True:  # loop where the player draws new cards
         deck.deal(player)
-        if player.hand.getValue() >= 21:
+        if player.hand.getvalue() >= 21:
             break
 
-        print("your hand is worth", player.hand.getValue())
+        print("your hand is worth", player.hand.getvalue())
         answer = input("do you want another card?")
 
         if answer == "y":
@@ -33,22 +33,22 @@ while True:  # loop that allows us to play several times
         elif answer == "n":
             break
 
-    while player.hand.getValue() <= 21:  # loop where the house draws new cards to match the player's
+    while player.hand.getvalue() <= 21:  # loop where the house draws new cards to match the player's
         deck.deal(house)
-        if house.hand.getValue() > player.hand.getValue() and house.hand.getValue() >= 17:
+        if house.hand.getvalue() > player.hand.getvalue() and house.hand.getvalue() >= 17:
             break
-    print("house hand is worth", house.hand.getValue())
+    print("house hand is worth", house.hand.getvalue())
 
-    if player.hand.getValue() > 21:
+    if player.hand.getvalue() > 21:
         print("player went over 21. house wins\n")
         player.pot = 0
 
-    elif player.hand.getValue() > house.hand.getValue():
+    elif player.hand.getvalue() > house.hand.getvalue():
         print("player beats the house\n")
         player.chips += 2*player.pot
         player.pot = 0
 
-    elif house.hand.getValue() <= 21:
+    elif house.hand.getvalue() <= 21:
         print("house beats the player\n")
         player.pot = 0
 
