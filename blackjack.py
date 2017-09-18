@@ -1,3 +1,5 @@
+#TODO reformat file to match PEP8 recommendations
+
 from game import *
 #we start by creating our two players, the player and the house
 player = Player(Hand([]), 80, "John")
