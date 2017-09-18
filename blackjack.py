@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 from blackjack import Classes_blackjack
 
+=======
+from game import *
+>>>>>>> origin/separate-classes
 #we start by creating our two players, the player and the house
 <<<<<<< HEAD
 player = Player(Hand([]), 80, "Sean")
