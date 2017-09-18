@@ -31,12 +31,14 @@ while True: #loop that allows us to play several times
         elif answer == "n":
             break
 
+
     while player.hand.getValue() <= 21: #loop where the house draws new cards to match the player's
         deck.deal(house)
         if house.hand.getValue() > player.hand.getValue() and house.hand.getValue()>=17:
             break
     print ("house hand is worth", house.hand.getValue())
 
+    # TODO create a function that takes care of determining the result and updating the player's pot
     if player.hand.getValue() > 21:
         print("player went over 21. house wins\n")
         player.pot = 0
