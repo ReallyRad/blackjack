@@ -3,7 +3,7 @@ from game import *
 player = Player(Hand([]), 80, "John")
 
 # TODO make the house a different class instead of another player
-house = Player(Hand([]), 9999999999, "House")
+house = House(Hand([]))
 
 
 while True: #loop that allows us to play several times
@@ -59,4 +59,3 @@ while True: #loop that allows us to play several times
         player.pot = 0
 
     player.display_chips()
-
