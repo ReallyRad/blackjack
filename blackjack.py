@@ -1,16 +1,15 @@
-from blackjack import Classes_blackjack
 
 #we start by creating our two players, the player and the house
-player = Classes_blackjack.Player(Classes_blackjack.Hand([]), 80, "John")
-house = Classes_blackjack.Player(Classes_blackjack.Hand([]), 9999999999, "House")
+player = Player(Hand([]), 80, "John")
+house = Player(Hand([]), 9999999999, "House")
 
 while True: #loop that allows us to play several times
     #reset the deck
-    deck = Classes_blackjack.Deck()
+    deck = Deck()
 
     #reset both player's and house's hands
-    player.hand = Classes_blackjack.Hand([])
-    house.hand = Classes_blackjack.Hand([])
+    player.hand = Hand([])
+    house.hand = Hand([])
 
     #deal one card from the deck to the player's hand
     deck.deal(player)
