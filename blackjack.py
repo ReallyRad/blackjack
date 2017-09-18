@@ -89,18 +89,21 @@ while True: #loop that allows us to play several times
     #TODO add exception handling in the case no number is entered
     player.bet(bet)
 
-    while True: #loop where the player draws new cards
-        deck.deal(player)
+
+    deck.deal(player)
+    print("your hand is worth", player.hand.getValue())
+
+    while True:
         if player.hand.getValue() >= 21:
             break
-
-        print("your hand is worth", player.hand.getValue())
         answer = input("do you want another card?")
 
         if answer == "y":
-            pass
+            deck.deal(player)
         elif answer == "n":
             break
+        else:
+            print("Please type y or n")
 
     while player.hand.getValue() <= 21: #loop where the house draws new cards to match the player's
         deck.deal(house)
