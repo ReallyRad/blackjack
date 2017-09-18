@@ -27,7 +27,7 @@ class Deck:
     def deal(self, player):
         #removes a random card from the deck and adds it to the hand given as a parameter
         card = random.choice(self.cards)
-        print(player.name, "you were dealt", card.value, card.suit)
+        print(player.name, "was dealt", card.value, card.suit)
         self.cards.remove(card)
         player.hand.cards.append(card)
 
