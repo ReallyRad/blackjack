@@ -80,6 +80,7 @@ while True: #loop that allows us to play several times
 
     #after seeing his card, the player makes a bet
     bet = int(input("how much do you want to bet?"))
+    #TODO add exception handling in the case no number is entered
     player.bet(bet)
 
     while True: #loop where the player draws new cards
